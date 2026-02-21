@@ -11,7 +11,7 @@ const NewsDetails = () => {
     setLoading(true);
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/news/${article_id}`,
+        `https://news-pules-server.vercel.app/api/news/${article_id}`,
       );
       console.log(response);
       setDetails(response.data);
